@@ -8,6 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script>tailwind.config = { theme: { extend: { colors: { cream:'#FAF8F5', forest:'#0B3D2E', sage:'#1A5C45', coral:'#E85D4C', gold:'#F4D35E' }, fontFamily: { serif:['Playfair Display','serif'], sans:['Manrope','sans-serif'] } } } }</script>
   <style>html{scroll-behavior:smooth} body{font-family:'Manrope',sans-serif;background:#0a0a0a;color:#FAF8F5} .panel{min-height:100vh;display:flex;align-items:center;position:relative} .video-bg{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:brightness(0.4) saturate(1.1)} .vignette{position:fixed;inset:0;background:radial-gradient(ellipse at center,transparent 20%,rgba(0,0,0,0.7) 100%);z-index:-1} .btn{display:inline-flex;align-items:center;gap:8px;background:#E85D4C;color:#fff;padding:14px 28px;border-radius:999px;font-weight:600;transition:all .35s} .btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px -8px rgba(232,93,76,.5)} .glass{background:rgba(255,255,255,.06);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.08);border-radius:24px} nav a{transition:color .2s} nav a:hover{color:#F4D35E}</style>
@@ -29,6 +30,29 @@
   <section class="panel"><div class="max-w-4xl mx-auto px-8 text-center"><p class="text-coral uppercase tracking-widest text-sm mb-3">Parents Say</p><h2 class="font-serif text-5xl mb-12">Loved by Families</h2><div class="grid md:grid-cols-2 gap-8"><div class="glass p-8 text-left"><p class="italic mb-4">“The care and attention my child receives here is unmatched. She comes home happy every day.”</p><div class="font-semibold">— Priya S., Parent</div></div><div class="glass p-8 text-left"><p class="italic mb-4">“Safe environment, wonderful teachers, and a curriculum that actually engages the kids.”</p><div class="font-semibold">— Rahul M., Parent</div></div></div></div></section>
   <section class="panel bg-black/40"><div class="max-w-3xl mx-auto px-8 text-center"><h2 class="font-serif text-5xl md:text-6xl mb-6">Admissions Open</h2><p class="text-xl opacity-80 mb-10">Limited seats. Come visit and see the difference.</p><a href="admissions.html" class="btn">Start Admission Process</a></div></section>
   <a href="https://wa.me/918796941683" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center text-white text-2xl shadow-lg z-50">💬</a>
-  <script>gsap.registerPlugin(ScrollTrigger);gsap.from(".panel h1, .panel h2, .panel p",{scrollTrigger:{trigger:"body",start:"top 90%"},y:50,opacity:0,duration:1,stagger:0.1,ease:"power2.out"});gsap.to(".video-bg",{scrollTrigger:{trigger:"body",start:"top top",end:"bottom bottom",scrub:true},y:100,scale:1.05});</script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    const lenis = new Lenis({ duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add((time) => { lenis.raf(time * 1000); });
+    gsap.ticker.lagSmoothing(0);
+
+    gsap.from(".panel:first-child h1 span, .panel:first-child p, .panel:first-child a", { y: 60, opacity: 0, duration: 1.2, stagger: 0.12, ease: "power3.out", delay: 0.3 });
+
+    ScrollTrigger.create({ trigger: "#why", start: "top top", end: "+=120%", pin: true, pinSpacing: true });
+    gsap.from("#why .glass", { scrollTrigger: { trigger: "#why", start: "top 60%", scrub: 0.6 }, y: 80, opacity: 0, stagger: 0.05 });
+
+    gsap.from(".panel .glass", { scrollTrigger: { trigger: ".panel .glass", start: "top 80%" }, x: (i) => (i % 2 === 0 ? -80 : 80), opacity: 0, duration: 1, stagger: 0.1, ease: "power2.out" });
+
+    gsap.from(".panel img", { scrollTrigger: { trigger: "img", start: "top 85%", scrub: 0.5 }, scale: 1.2, opacity: 0.3 });
+
+    gsap.to(".video-bg", { scrollTrigger: { trigger: "body", start: "top top", end: "bottom bottom", scrub: true }, yPercent: 15, scale: 1.08 });
+
+    gsap.utils.toArray("h1, h2").forEach(h => {
+      gsap.from(h, { scrollTrigger: { trigger: h, start: "top 85%" }, y: 40, opacity: 0, duration: 1, ease: "power3.out" });
+    });
+  </script>
 </body>
 </html>
