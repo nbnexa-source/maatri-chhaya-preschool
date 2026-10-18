@@ -4,180 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maatri Chhaya Preschool & Day Care | Sector 89, Gurgaon</title>
-  <meta name="description" content="A warm, cinematic journey through Maatri Chhaya Preschool & Day Care. NEP 2020 curriculum, safe environment, Play Group, Nursery & Day Care in Sector 89, Gurgaon.">
+  <meta name="description" content="Trust, care and joyful learning at Maatri Chhaya. Play Group, Nursery & Day Care in Sector 89, Gurgaon.">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: { cream: '#FAF8F5', forest: '#0B3D2E', sage: '#1A5C45', coral: '#E85D4C', gold: '#F4D35E' },
-          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Manrope', 'sans-serif'] }
-        }
-      }
-    }
-  </script>
-  <style>
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Manrope', sans-serif; background: #0a0a0a; color: #FAF8F5; }
-    .panel { min-height: 100vh; display: flex; align-items: center; position: relative; }
-    .video-bg { position: fixed; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; filter: brightness(0.45) saturate(1.15); }
-    .vignette { position: fixed; inset: 0; background: radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,0.65) 100%); z-index: -1; }
-    .btn { display: inline-flex; align-items: center; gap: 8px; background: #E85D4C; color: white; padding: 14px 28px; border-radius: 999px; font-weight: 600; transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-    .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 28px -8px rgba(232,93,76,0.5); }
-    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; }
-    input, select, textarea { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 14px 16px; width: 100%; color: white; }
-    input:focus, select:focus, textarea:focus { outline: none; border-color: #F4D35E; }
-  </style>
+  <script>tailwind.config = { theme: { extend: { colors: { cream:'#FAF8F5', forest:'#0B3D2E', sage:'#1A5C45', coral:'#E85D4C', gold:'#F4D35E' }, fontFamily: { serif:['Playfair Display','serif'], sans:['Manrope','sans-serif'] } } } }</script>
+  <style>html{scroll-behavior:smooth} body{font-family:'Manrope',sans-serif;background:#0a0a0a;color:#FAF8F5} .panel{min-height:100vh;display:flex;align-items:center;position:relative} .video-bg{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:brightness(0.4) saturate(1.1)} .vignette{position:fixed;inset:0;background:radial-gradient(ellipse at center,transparent 20%,rgba(0,0,0,0.7) 100%);z-index:-1} .btn{display:inline-flex;align-items:center;gap:8px;background:#E85D4C;color:#fff;padding:14px 28px;border-radius:999px;font-weight:600;transition:all .35s} .btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px -8px rgba(232,93,76,.5)} .glass{background:rgba(255,255,255,.06);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.08);border-radius:24px} nav a{transition:color .2s} nav a:hover{color:#F4D35E}</style>
 </head>
 <body>
-  <video class="video-bg" autoplay muted loop playsinline>
-    <source src="https://videos.pexels.com/video-files/8435425/8435425-hd_1920_1080_25fps.mp4" type="video/mp4">
-  </video>
+  <video class="video-bg" autoplay muted loop playsinline><source src="https://videos.pexels.com/video-files/8435425/8435425-hd_1920_1080_25fps.mp4" type="video/mp4"></video>
   <div class="vignette"></div>
-
   <nav class="fixed top-0 w-full z-50 px-8 py-5 flex justify-between items-center mix-blend-difference">
-    <div class="font-serif text-2xl">Maatri Chhaya</div>
-    <div class="hidden md:flex gap-10 text-sm">
-      <a href="#about">About</a>
-      <a href="#programs">Programs</a>
-      <a href="#fees">Fees</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
+    <a href="index.html" class="font-serif text-2xl">Maatri Chhaya</a>
+    <div class="hidden md:flex gap-8 text-sm">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="admissions.html">Admissions</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
     </div>
+    <a href="contact.html" class="btn text-sm py-2.5 px-5">Enquire</a>
   </nav>
-
-  <section class="panel">
-    <div class="max-w-5xl mx-auto px-8">
-      <p class="text-gold tracking-[0.25em] uppercase text-sm mb-6">Sector 89 · Gurgaon</p>
-      <h1 class="font-serif text-6xl md:text-8xl leading-[0.95] mb-8">Where Every<br><span class="italic text-gold">Child Blooms</span></h1>
-      <p class="text-xl md:text-2xl font-light max-w-xl opacity-90 mb-10">A nurturing space filled with laughter, discovery, and gentle care. Scroll to walk through a day at Maatri Chhaya.</p>
-      <a href="#about" class="btn">Start the Story →</a>
-    </div>
-  </section>
-
-  <section id="about" class="panel">
-    <div class="max-w-6xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
-      <div>
-        <p class="text-coral uppercase tracking-widest text-sm mb-4">Our Story</p>
-        <h2 class="font-serif text-5xl md:text-6xl mb-6">Care Meets Learning</h2>
-        <p class="text-lg opacity-80 leading-relaxed mb-6">At Maatri Chhaya, we believe every child deserves a warm beginning. Our educators create a safe, joyful environment where curiosity is encouraged and confidence grows naturally.</p>
-        <p class="text-lg opacity-80 leading-relaxed">NEP 2020 based curriculum, play-based learning, and genuine love for little ones — this is where childhood thrives.</p>
-      </div>
-      <div class="glass p-8">
-        <div class="text-4xl mb-4">🌱</div>
-        <p class="font-serif text-2xl italic">“Nurturing Young Minds, Building Bright Futures”</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="programs" class="panel bg-black/30">
-    <div class="max-w-6xl mx-auto px-8 w-full">
-      <div class="text-center mb-14">
-        <p class="text-gold uppercase tracking-widest text-sm mb-3">Programs</p>
-        <h2 class="font-serif text-5xl">A Strong Start</h2>
-      </div>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="glass p-8">
-          <div class="text-coral text-sm font-semibold mb-6">PRESCHOOL</div>
-          <div class="space-y-6">
-            <div class="flex justify-between items-end border-b border-white/10 pb-4">
-              <div><h3 class="font-serif text-3xl">Play Group</h3><p class="opacity-60 text-sm">1.5 – 3 Years</p></div>
-              <div class="text-right"><div class="font-serif text-3xl text-gold">₹5,000</div><div class="text-xs opacity-50">per month</div></div>
-            </div>
-            <div class="flex justify-between items-end">
-              <div><h3 class="font-serif text-3xl">Nursery</h3><p class="opacity-60 text-sm">3 – 4 Years</p></div>
-              <div class="text-right"><div class="font-serif text-3xl text-gold">₹5,000</div><div class="text-xs opacity-50">per month</div></div>
-            </div>
-          </div>
-        </div>
-        <div class="glass p-8">
-          <div class="text-gold text-sm font-semibold mb-6">DAY CARE</div>
-          <div class="space-y-6">
-            <div class="flex justify-between items-end border-b border-white/10 pb-4">
-              <div><h3 class="font-serif text-3xl">Half Day</h3><p class="opacity-60 text-sm">Up to 5 Hours</p></div>
-              <div class="text-right"><div class="font-serif text-3xl">₹6,000</div><div class="text-xs opacity-50">per month</div></div>
-            </div>
-            <div class="flex justify-between items-end">
-              <div><h3 class="font-serif text-3xl">Full Day</h3><p class="opacity-60 text-sm">9 AM – 6 PM</p></div>
-              <div class="text-right"><div class="font-serif text-3xl">₹10,000</div><div class="text-xs opacity-50">per month</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="fees" class="panel">
-    <div class="max-w-4xl mx-auto px-8 text-center">
-      <p class="text-coral uppercase tracking-widest text-sm mb-3">Transparent</p>
-      <h2 class="font-serif text-5xl mb-12">Fee Structure</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="glass p-6"><div class="text-sm opacity-60 mb-2">Registration</div><div class="font-serif text-4xl">₹1,000</div></div>
-        <div class="glass p-6 border-gold/40"><div class="text-sm opacity-60 mb-2">Admission</div><div class="font-serif text-4xl text-gold">Early Bird Free</div></div>
-        <div class="glass p-6"><div class="text-sm opacity-60 mb-2">Security (Refundable)</div><div class="font-serif text-4xl">₹11,000</div></div>
-      </div>
-      <p class="mt-8 text-sm opacity-60">Transport, uniform, books & learning material charged separately. Camera access via app ₹1,000/month.</p>
-    </div>
-  </section>
-
-  <section id="gallery" class="panel bg-black/20">
-    <div class="max-w-6xl mx-auto px-8 w-full">
-      <div class="text-center mb-12">
-        <p class="text-gold uppercase tracking-widest text-sm mb-3">Moments</p>
-        <h2 class="font-serif text-5xl">Life at Maatri Chhaya</h2>
-      </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600" class="rounded-2xl h-64 object-cover" alt="Classroom">
-        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600" class="rounded-2xl h-64 object-cover" alt="Learning">
-        <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=600" class="rounded-2xl h-64 object-cover" alt="Play">
-        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600" class="rounded-2xl h-64 object-cover" alt="Art">
-        <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600" class="rounded-2xl h-64 object-cover md:col-span-2" alt="Joy">
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="panel">
-    <div class="max-w-xl mx-auto px-8 w-full">
-      <div class="text-center mb-10">
-        <p class="text-coral uppercase tracking-widest text-sm mb-3">Begin Here</p>
-        <h2 class="font-serif text-5xl">Book a Visit</h2>
-      </div>
-      <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Our team will contact you shortly.'); this.reset();">
-        <input type="text" placeholder="Parent Name" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <input type="email" placeholder="Email">
-        <select required>
-          <option value="">Program Interested In</option>
-          <option>Play Group (1.5–3 yrs)</option>
-          <option>Nursery (3–4 yrs)</option>
-          <option>Half Day Day Care</option>
-          <option>Full Day Day Care</option>
-        </select>
-        <textarea placeholder="Message or preferred visit time" rows="3"></textarea>
-        <button type="submit" class="btn w-full justify-center">Send Enquiry</button>
-      </form>
-      <div class="mt-10 text-center text-sm opacity-70 space-y-1">
-        <div>+91 87969 41683</div>
-        <div>info@maatrichhayaeducation.in</div>
-        <div>Sector 89, Salig Ki Dhani, Gurugram</div>
-        <a href="https://maps.app.goo.gl/UQ2SorGPUg6YCGYd7" target="_blank" class="text-gold underline">View on Maps</a>
-      </div>
-    </div>
-  </section>
-
+  <section class="panel"><div class="max-w-5xl mx-auto px-8"><p class="text-gold tracking-[0.25em] uppercase text-sm mb-6">Sector 89 · Gurgaon</p><h1 class="font-serif text-6xl md:text-8xl leading-[0.95] mb-8">Where Every<br><span class="italic text-gold">Child Blooms</span></h1><p class="text-xl md:text-2xl font-light max-w-xl opacity-90 mb-10">A safe, joyful space where care and learning come together. Scroll to discover a day of wonder.</p><a href="#why" class="btn">Explore Why Us →</a></div></section>
+  <section id="why" class="panel bg-black/30"><div class="max-w-6xl mx-auto px-8 w-full"><div class="text-center mb-14"><p class="text-coral uppercase tracking-widest text-sm mb-3">Why Parents Trust Us</p><h2 class="font-serif text-5xl">Everything a Child Needs</h2></div><div class="grid grid-cols-2 md:grid-cols-5 gap-6"><div class="glass p-6 text-center"><div class="text-3xl mb-3">📚</div><div class="font-semibold text-sm">NEP 2020 Curriculum</div></div><div class="glass p-6 text-center"><div class="text-3xl mb-3">🧩</div><div class="font-semibold text-sm">Play-Based Learning</div></div><div class="glass p-6 text-center"><div class="text-3xl mb-3">🎨</div><div class="font-semibold text-sm">Art & Craft</div></div><div class="glass p-6 text-center"><div class="text-3xl mb-3">🎵</div><div class="font-semibold text-sm">Music & Dance</div></div><div class="glass p-6 text-center"><div class="text-3xl mb-3">🛡️</div><div class="font-semibold text-sm">Safe & Secure</div></div><div class="glass p-6 text-center"><div class="text-3xl mb-3">📹</div><div class="font-semibold text-sm">CCTV Enabled</div></div><div class="glass p-6 text-center"><div class="text-3xl mb-3">👨‍👩‍👧</div><div class="font-semibold text-sm">Parent Meetings</div></div><div class="glass p-6 text-center"><div class="text-3xl mb-3">🏃</div><div class="font-semibold text-sm">Indoor & Outdoor Play</div></div><div class="glass p-6 text-center"><div class="text-3xl mb-3">📱</div><div class="font-semibold text-sm">Parent App</div></div><div class="glass p-6 text-center"><div class="text-3xl mb-3">❤️</div><div class="font-semibold text-sm">Loving Educators</div></div></div></div></section>
+  <section class="panel"><div class="max-w-6xl mx-auto px-8 text-center"><p class="text-gold uppercase tracking-widest text-sm mb-3">Our Programs</p><h2 class="font-serif text-5xl mb-10">A Strong Foundation</h2><div class="grid md:grid-cols-3 gap-6 mb-10"><div class="glass p-8"><h3 class="font-serif text-2xl mb-2">Play Group</h3><p class="opacity-70">1.5 – 3 Years</p></div><div class="glass p-8"><h3 class="font-serif text-2xl mb-2">Nursery</h3><p class="opacity-70">3 – 4 Years</p></div><div class="glass p-8"><h3 class="font-serif text-2xl mb-2">Day Care</h3><p class="opacity-70">Half & Full Day</p></div></div><a href="programs.html" class="btn">View All Programs</a></div></section>
+  <section class="panel bg-black/20"><div class="max-w-6xl mx-auto px-8 w-full text-center"><p class="text-gold uppercase tracking-widest text-sm mb-3">Moments of Joy</p><h2 class="font-serif text-5xl mb-10">Life at Maatri Chhaya</h2><div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10"><img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400" class="rounded-2xl h-48 object-cover" alt=""><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" class="rounded-2xl h-48 object-cover" alt=""><img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400" class="rounded-2xl h-48 object-cover" alt=""><img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=400" class="rounded-2xl h-48 object-cover" alt=""></div><a href="gallery.html" class="btn">See Full Gallery</a></div></section>
+  <section class="panel"><div class="max-w-4xl mx-auto px-8 text-center"><p class="text-coral uppercase tracking-widest text-sm mb-3">Parents Say</p><h2 class="font-serif text-5xl mb-12">Loved by Families</h2><div class="grid md:grid-cols-2 gap-8"><div class="glass p-8 text-left"><p class="italic mb-4">“The care and attention my child receives here is unmatched. She comes home happy every day.”</p><div class="font-semibold">— Priya S., Parent</div></div><div class="glass p-8 text-left"><p class="italic mb-4">“Safe environment, wonderful teachers, and a curriculum that actually engages the kids.”</p><div class="font-semibold">— Rahul M., Parent</div></div></div></div></section>
+  <section class="panel bg-black/40"><div class="max-w-3xl mx-auto px-8 text-center"><h2 class="font-serif text-5xl md:text-6xl mb-6">Admissions Open</h2><p class="text-xl opacity-80 mb-10">Limited seats. Come visit and see the difference.</p><a href="admissions.html" class="btn">Start Admission Process</a></div></section>
   <a href="https://wa.me/918796941683" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center text-white text-2xl shadow-lg z-50">💬</a>
-
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.utils.toArray(".panel").forEach(panel => {
-      gsap.from(panel.querySelectorAll("h1, h2, p, .glass, img"), {
-        scrollTrigger: { trigger: panel, start: "top 80%" },
-        y: 50, opacity: 0, duration: 1, stagger: 0.1, ease: "power2.out"
-      });
-    });
-  </script>
+  <script>gsap.registerPlugin(ScrollTrigger);gsap.from(".panel h1, .panel h2, .panel p",{scrollTrigger:{trigger:"body",start:"top 90%"},y:50,opacity:0,duration:1,stagger:0.1,ease:"power2.out"});gsap.to(".video-bg",{scrollTrigger:{trigger:"body",start:"top top",end:"bottom bottom",scrub:true},y:100,scale:1.05});</script>
 </body>
 </html>
