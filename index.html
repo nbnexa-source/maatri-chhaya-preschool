@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maatri Chhaya Preschool & Day Care | Nurturing Young Minds | Sector 89, Gurgaon</title>
+  <meta name="description" content="Maatri Chhaya Preschool & Day Care in Sector 89, Gurgaon. NEP 2020 based curriculum, safe environment, play group, nursery & daycare. Admissions open.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { cream: '#FAF8F5', forest: '#0B3D2E', sage: '#1A5C45', coral: '#E85D4C', gold: '#F4D35E' },
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Manrope', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; } body { font-family: 'Manrope', sans-serif; background: #FAF8F5; }
+    .btn-premium { transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .btn-premium:hover { transform: translateY(-2px); box-shadow: 0 12px 28px -8px rgba(11, 61, 46, 0.35); }
+    .card-hover { transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(11, 61, 46, 0.15); }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background: #E85D4C; transition: width 0.3s ease; }
+    .nav-link:hover::after { width: 100%; }
+    .floating { animation: float 6s ease-in-out infinite; }
+    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-12px); } }
+    .whatsapp-float { animation: pulse 2s infinite; }
+    @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+  </style>
+</head>
+<body class="text-forest">
+  <nav class="fixed top-0 w-full z-50 bg-cream/90 backdrop-blur-md border-b border-forest/5">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="https://via.placeholder.com/48/0B3D2E/FFFFFF?text=MC" alt="Logo" class="w-12 h-12 rounded-full">
+        <div>
+          <div class="font-serif text-xl font-bold leading-none">Maatri Chhaya</div>
+          <div class="text-[10px] tracking-widest uppercase text-sage">Preschool & Day Care</div>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#programs" class="nav-link">Programs</a>
+        <a href="#fees" class="nav-link">Fees</a>
+        <a href="#why" class="nav-link">Why Us</a>
+        <a href="admissions.html" class="nav-link">Admissions</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <a href="admissions.html" class="btn-premium bg-coral text-white px-5 py-2.5 rounded-full text-sm font-semibold">Apply Now →</a>
+    </div>
+  </nav>
+
+  <section class="relative min-h-screen flex items-center pt-20">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-coral font-medium tracking-widest text-sm uppercase mb-4">Sector 89, Gurgaon</p>
+        <h1 class="font-serif text-5xl md:text-7xl leading-[1.1] mb-6">Nurturing<br><span class="italic text-sage">Young Minds</span></h1>
+        <p class="text-lg text-forest/70 max-w-md mb-8">A warm, safe and inspiring space where children learn, explore and grow through love, play and meaningful experiences.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#programs" class="btn-premium bg-forest text-white px-7 py-3.5 rounded-full font-semibold">Discover Programs →</a>
+          <a href="https://wa.me/918796941683" target="_blank" class="btn-premium border-2 border-forest text-forest px-7 py-3.5 rounded-full font-semibold">WhatsApp Us</a>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=800" alt="Children learning" class="w-full h-[520px] object-cover rounded-3xl shadow-2xl">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class="text-coral font-medium tracking-widest text-sm uppercase mb-3">Our Story</p>
+          <h2 class="font-serif text-4xl md:text-5xl mb-6">Where Care Meets Learning</h2>
+          <p class="text-forest/70 leading-relaxed mb-4">At Maatri Chhaya Preschool & Day Care, we focus on each child's individuality in a nurturing environment that promotes curiosity, creativity, and confidence.</p>
+          <p class="text-forest/70 leading-relaxed">Our child-centric approach combines love, learning, and play, led by experienced educators.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" class="rounded-2xl h-64 object-cover" alt="Creative learning">
+          <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400" class="rounded-2xl h-64 object-cover mt-8" alt="Outdoor play">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <p class="text-coral font-medium tracking-widest text-sm uppercase mb-3">Programs</p>
+        <h2 class="font-serif text-4xl md:text-5xl">A Strong Start Today</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-3xl p-8 card-hover border border-forest/5">
+          <div class="text-coral text-sm font-semibold mb-2">PRESCHOOL PROGRAMS</div>
+          <div class="space-y-6">
+            <div class="flex justify-between items-start border-b border-forest/10 pb-4">
+              <div><h3 class="font-serif text-2xl">Play Group</h3><p class="text-forest/60 text-sm">1.5 to 3 Years</p></div>
+              <div class="text-right"><div class="font-serif text-2xl text-coral">₹5,000</div><div class="text-xs text-forest/50">per month</div></div>
+            </div>
+            <div class="flex justify-between items-start">
+              <div><h3 class="font-serif text-2xl">Nursery</h3><p class="text-forest/60 text-sm">3 to 4 Years</p></div>
+              <div class="text-right"><div class="font-serif text-2xl text-coral">₹5,000</div><div class="text-xs text-forest/50">per month</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-forest text-white rounded-3xl p-8 card-hover">
+          <div class="text-gold text-sm font-semibold mb-2">DAY CARE PLANS</div>
+          <div class="space-y-6">
+            <div class="flex justify-between items-start border-b border-white/10 pb-4">
+              <div><h3 class="font-serif text-2xl">Half Day</h3><p class="text-white/60 text-sm">Up to 5 Hours</p></div>
+              <div class="text-right"><div class="font-serif text-2xl">₹6,000</div><div class="text-xs text-white/50">per month</div></div>
+            </div>
+            <div class="flex justify-between items-start">
+              <div><h3 class="font-serif text-2xl">Full Day</h3><p class="text-white/60 text-sm">9 AM to 6 PM</p></div>
+              <div class="text-right"><div class="font-serif text-2xl">₹10,000</div><div class="text-xs text-white/50">per month</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fees" class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12"><p class="text-coral font-medium tracking-widest text-sm uppercase mb-3">Transparent Pricing</p><h2 class="font-serif text-4xl">Fee Structure</h2></div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-cream rounded-3xl p-8">
+          <h3 class="font-serif text-2xl mb-6">One-Time Admission Charges</h3>
+          <div class="space-y-4">
+            <div class="flex justify-between"><span>Registration Fee</span><span class="font-semibold">₹1,000</span></div>
+            <div class="flex justify-between items-center"><span>Admission Fee</span><span class="bg-gold text-forest text-xs font-bold px-2 py-1 rounded">Early Bird Free</span></div>
+            <div class="flex justify-between"><span>Security Deposit (Refundable)</span><span class="font-semibold">₹11,000</span></div>
+          </div>
+        </div>
+        <div class="bg-cream rounded-3xl p-8">
+          <h3 class="font-serif text-2xl mb-6">Optional Charges</h3>
+          <div class="space-y-4 text-sm">
+            <div class="flex justify-between"><span>Transport (If Available)</span><span>As per Distance</span></div>
+            <div class="flex justify-between"><span>Uniform</span><span>Extra</span></div>
+            <div class="flex justify-between"><span>Books & Learning Kit</span><span>Extra</span></div>
+            <div class="flex justify-between"><span>Camera Access (App)</span><span class="font-semibold">₹1,000 / Month</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16"><p class="text-coral font-medium tracking-widest text-sm uppercase mb-3">Why Parents Trust Us</p><h2 class="font-serif text-4xl md:text-5xl">Everything Included</h2></div>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+        <div class="bg-white p-6 rounded-2xl text-center card-hover"><div class="text-3xl mb-3">📚</div><div class="font-semibold text-sm">NEP 2020 Curriculum</div></div>
+        <div class="bg-white p-6 rounded-2xl text-center card-hover"><div class="text-3xl mb-3">🧩</div><div class="font-semibold text-sm">SmartK Learning Material</div></div>
+        <div class="bg-white p-6 rounded-2xl text-center card-hover"><div class="text-3xl mb-3">🎨</div><div class="font-semibold text-sm">Art & Craft</div></div>
+        <div class="bg-white p-6 rounded-2xl text-center card-hover"><div class="text-3xl mb-3">🎵</div><div class="font-semibold text-sm">Music & Dance</div></div>
+        <div class="bg-white p-6 rounded-2xl text-center card-hover"><div class="text-3xl mb-3">📖</div><div class="font-semibold text-sm">Storytelling</div></div>
+        <div class="bg-white p-6 rounded-2xl text-center card-hover"><div class="text-3xl mb-3">🏃</div><div class="font-semibold text-sm">Indoor & Outdoor Play</div></div>
+        <div class="bg-white p-6 rounded-2xl text-center card-hover"><div class="text-3xl mb-3">👨‍👩‍👧</div><div class="font-semibold text-sm">Parent-Teacher Meetings</div></div>
+        <div class="bg-white p-6 rounded-2xl text-center card-hover"><div class="text-3xl mb-3">🛡️</div><div class="font-semibold text-sm">Safe & Secure</div></div>
+        <div class="bg-white p-6 rounded-2xl text-center card-hover"><div class="text-3xl mb-3">📹</div><div class="font-semibold text-sm">CCTV Enabled</div></div>
+        <div class="bg-white p-6 rounded-2xl text-center card-hover"><div class="text-3xl mb-3">📱</div><div class="font-semibold text-sm">Exclusive App</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12"><p class="text-coral font-medium tracking-widest text-sm uppercase mb-3">Life at Maatri Chhaya</p><h2 class="font-serif text-4xl">Moments of Joy</h2></div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400" class="rounded-2xl h-48 md:h-64 object-cover" alt="Classroom">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" class="rounded-2xl h-48 md:h-64 object-cover" alt="Learning">
+        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=400" class="rounded-2xl h-48 md:h-64 object-cover" alt="Art">
+        <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400" class="rounded-2xl h-48 md:h-64 object-cover" alt="Play">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-24">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="bg-forest text-white rounded-3xl p-10 md:p-16">
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h2 class="font-serif text-4xl mb-4">Begin the Journey</h2>
+            <p class="text-white/70 mb-8">Admissions are open. Visit us or reach out.</p>
+            <div class="space-y-4 text-sm">
+              <div>📍 Sector 89, Salig Ki Dhani, Gurugram, Haryana 122505<br><a href="https://maps.app.goo.gl/UQ2SorGPUg6YCGYd7" target="_blank" class="text-gold underline text-xs">View on Google Maps</a></div>
+              <div>📞 <a href="tel:+918796941683" class="hover:text-gold">+91 87969 41683</a></div>
+              <div>✉️ <a href="mailto:info@maatrichhayaeducation.in" class="hover:text-gold">info@maatrichhayaeducation.in</a></div>
+            </div>
+          </div>
+          <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! We will contact you shortly.');">
+            <input type="text" placeholder="Parent Name" required class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-gold">
+            <input type="tel" placeholder="Phone Number" required class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-gold">
+            <select class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold">
+              <option value="" class="text-forest">Program Interested In</option>
+              <option class="text-forest">Play Group</option>
+              <option class="text-forest">Nursery</option>
+              <option class="text-forest">Half Day Day Care</option>
+              <option class="text-forest">Full Day Day Care</option>
+            </select>
+            <button type="submit" class="btn-premium w-full bg-coral text-white py-4 rounded-xl font-semibold">Request a Callback</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-forest text-white/70 py-12">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <div class="font-serif text-2xl text-white mb-2">Maatri Chhaya</div>
+      <p class="text-sm mb-4">Preschool & Day Care · Sector 89, Gurgaon</p>
+      <p class="text-xs">Where Care Meets Learning & Every Child Blooms</p>
+      <div class="mt-6 text-xs">© 2026 Maatri Chhaya Preschool & Day Care</div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/918796941683" target="_blank" class="whatsapp-float fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center text-white text-2xl shadow-lg z-50">💬</a>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from("h1, .card-hover, section h2", { scrollTrigger: { trigger: "body", start: "top 90%" }, y: 40, opacity: 0, duration: 0.8, stagger: 0.1, ease: "power2.out" });
+  </script>
+</body>
+</html>
